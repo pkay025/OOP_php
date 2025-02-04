@@ -1,10 +1,12 @@
 <?php
+require_once 'Patient.php';
+
 class Doctor {
     private $doctorId;
     private $name;
     private $specialization;
-  
-    
+
+
     public function __construct($doctorId, $name, $specialization) {
         $this->setDoctorId($doctorId);
         $this->setName($name);

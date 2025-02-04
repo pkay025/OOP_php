@@ -1,4 +1,6 @@
 <?php
+require_once 'Staff.php';
+
 class Nurse extends Staff {
     private $shift;
     private $patientsAssigned;
