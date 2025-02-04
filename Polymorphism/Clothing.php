@@ -12,6 +12,7 @@ class Clothing extends Product {
         $this->additionalCost = $additionalCost;
     }
    
+
     public function getSize(){
         return $this->size;
     }
@@ -19,4 +20,6 @@ class Clothing extends Product {
         return $this->basePrice + $this->additionalCost;
     }
 }
+
+?>
         

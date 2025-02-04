@@ -13,11 +13,13 @@ class Main {
 
         $hospitalManagementSystem = new HospitalManagementSystem();
 
-       
+
         $hospitalManagementSystem->registerDoctor($doctor1);
         $hospitalManagementSystem->registerDoctor($doctor2);
         $hospitalManagementSystem->registerNurse($nurse1);
     }
 }
+
+Main::main();
 
 ?>

@@ -1,5 +1,5 @@
 <?php
-// filepath: /path/to/Cart.php
+require_once 'Product.php';
 
 class Cart {
     private $products = [];
@@ -8,7 +8,7 @@ class Cart {
         $this->products[] = $product;
     }
 
-    public function calculateTotalPrice(...$products) {
+    public function calculateTotalPrice($products) {
         $total = 0;
         foreach ($products as $product) {
             $total += $product->calculateFinalPrice();

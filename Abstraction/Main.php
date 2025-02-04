@@ -1,7 +1,9 @@
 <?php
 require_once 'FullTimeEmployee.php';
+require_once 'Employee.php';
 
-function main() {
+class Main { 
+    public static function main() {
     $employee = new FullTimeEmployee("Paakow Emma", "EOO1", 90000);
     echo "Name: " . $employee->getName() . "\n";
     echo "Employee ID: " . $employee->getEmployeeId() . "\n";
@@ -13,5 +15,8 @@ function main() {
     echo "Employee ID: " . $employee2->getEmployeeId() . "\n";
     echo "Salary: " . $employee2->getSalary() . "\n";
     $employee2->calculatePay();
+
+    }
+
 }
 ?>
